@@ -9,13 +9,24 @@ and open the template in the editor.
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sara Scardigli">
+        <meta name="description" content="login">
     </head>
     <body>
         <form action="demo_form.asp">
-            nickname <input type="text" name="Nickname"><br>
-            <br>
-            password <input type="text" name="Password"><br>
-            <input type="submit" value="Submit">
+            <label for="corto">Nickname</label>
+            <input type="text" name="corto"
+                id="corto" value="" />
+            <br />
+            <label for="pswd">Testo breve</label>
+            <input type="password" name="pswd” "
+                id="pswd" value="" />
+            <br />
+            <button type="submit">Submit</button>
         </form>
+        <br />
+        <ul><li><a href="descrizione.html">Descrizione</a></li></ul>
+        <ul><li><a href="cliente.html">Cliente</a></li></ul>
+        <ul><li><a href="venditore.html">Venditore</a></li></ul>
     </body>
 </html>
