@@ -9,20 +9,40 @@ and open the template in the editor.
         <title>Inserimento oggetti</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="inserimentooggetti">
+        <meta name="author" content="Sara Scardigli">
+        <meta name="description" content="inserimentooggetti">
     </head>
     <body>
         <form action="demo_form.asp">
-            Nome oggetto        <input type="text" name="nome"><br>
-            <br>
-            URL immagine        <input type="text" name="url"><br>
-            <br>
-            Descrizione         <input type="text" name="descrizione"><br>
-            <br>
-            Prezzo              <input type="text" name="prezzo"><br>
-            <br>
-            Quantità            <input type="text" name="quantità"><br>
+            <div>
+                <label for="nomeoggetto">Nome oggetto</label>
+                <input type="text" name="nomeoggetto"
+                       id="nomeoggetto" value="" />
+            </div>
+            <div>
+                <label for="url_img">URL immagine</label>
+                <input type="url" name="url_img"
+                       id="url_img" value="" />
+            </div>
+            <div>
+                <label for="lungo">Descrizione</label>
+                <textarea rows="4" cols="20" name="lungo" id="lungo"></textarea>
+            </div>
+            <div>
+                <label for="prezzo">Prezzo</label>
+                <input type="number" name="prezzo"
+                       id="prezzo" value="" />
+            </div>
+            <div>
+                <label for="quantita">Quantità </label>
+                <input type="number" name="quantita"
+                       id="quantita" value="" />
+            </div>
             <input type="submit" value="Submit">
         </form>
+        <nav>
+            <ul><li><a href="descrizione.html">Descrizione</a></li></ul>
+            <ul><li><a href="login.html">Login</a></li></ul>
+        </nav>
     </body>
 </html>
